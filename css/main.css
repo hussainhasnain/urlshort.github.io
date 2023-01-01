@@ -1,0 +1,370 @@
+/************************************ COLORS *****************************************/
+/************************************ FONT *****************************************/
+/************************************ Basic Styling *****************************************/
+h1, h2, h3, h4, h5 {
+  color: #232127;
+}
+
+a {
+  text-decoration: none;
+  color: #a9a2a2;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+/************************************ Universal Reset *****************************************/
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #a9a2a2;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/************************************ For centering our content within 1140px *****************************************/
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+/************************************ Header starts here *****************************************/
+.header__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: hidden;
+}
+
+.header__btn {
+  margin-left: auto;
+}
+
+.header__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__textbox {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding: 0 5vw 0 0;
+  margin-top: -9rem;
+}
+
+.header__textbox *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.header__text {
+  font-size: 1.6rem;
+}
+
+.header__photo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav {
+  padding: 2rem 0;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 5rem;
+}
+
+.nav__list *:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.nav__link {
+  font-size: 1.5rem;
+}
+
+.nav__link:hover {
+  color: #232127;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.btn {
+  font-size: 1.4rem;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.btn__light {
+  margin-right: 3rem;
+}
+
+.btn__light:hover {
+  color: #232127;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.btn__cyan {
+  padding: .5rem 1.8rem;
+  background-color: #2acfcf;
+  color: #fff;
+  border-radius: 10rem;
+}
+
+.btn__cyan--boost {
+  color: #fff;
+  padding: 1rem 3rem;
+}
+
+.btn__cyan:hover {
+  color: #2acfcf;
+  background-color: #35323e;
+}
+
+.btn__shorten {
+  padding: 1rem 3.5rem;
+}
+
+.heading-primary {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/************************************ Header ends here *****************************************/
+/************************************ shorten section starts here *****************************************/
+.shorten {
+  padding: 5rem 0;
+}
+
+.shorten__content {
+  background-color: #3b3054;
+  width: 90%;
+  padding: 4rem 4rem;
+  border-radius: 1rem;
+}
+
+.shorten__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 80%;
+          flex: 0 0 80%;
+}
+
+.form__input {
+  display: block;
+  width: 95%;
+  padding: 2rem 2rem;
+  border: none;
+  outline: none;
+  margin-right: 2rem;
+  border-radius: 1rem;
+  font-family: inherit;
+}
+
+/************************************ shorten section ends here *****************************************/
+/************************************ Features section starts here *****************************************/
+.features {
+  padding: 5rem 0 20rem 0;
+  margin-top: -5rem;
+  background-color: #a9a2a2;
+}
+
+.features__textbox {
+  text-align: center;
+  padding: 1rem 30vw;
+  color: #35323e;
+}
+
+.features__textbox *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.features__text {
+  font-size: 1.6rem;
+  margin-bottom: 8rem;
+}
+
+.features__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 3rem;
+  color: #35323e;
+}
+
+.features__card {
+  padding: 2rem 4rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+.features__card--2 {
+  -webkit-transform: translateY(3.5rem);
+          transform: translateY(3.5rem);
+}
+
+.features__card--3 {
+  -webkit-transform: translateY(7.5rem);
+          transform: translateY(7.5rem);
+}
+
+.features__card--icon {
+  background-color: #35323e;
+  border-radius: 10rem;
+  display: inline-block;
+  width: 8rem;
+  height: 8rem;
+  -webkit-transform: translateY(-6rem);
+          transform: translateY(-6rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.features__card--img {
+  width: 4rem;
+}
+
+.features__card--text {
+  font-size: 1.3rem;
+  -webkit-transform: translateY(-2rem);
+          transform: translateY(-2rem);
+}
+
+.heading-secondary {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.heading-secondary--boost {
+  color: #fff;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 700;
+  -webkit-transform: translateY(-4rem);
+          transform: translateY(-4rem);
+}
+
+/************************************ Features section ends here *****************************************/
+/************************************ Boost section starts here *****************************************/
+.boost {
+  background-color: #3b3054;
+  padding: 5rem 0;
+}
+
+.boost__textbox {
+  text-align: center;
+}
+
+.boost__textbox *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+/************************************ Boost section ends here *****************************************/
+/************************************ Footer starts here *****************************************/
+.footer {
+  padding: 5rem 0;
+  background-color: #232127;
+}
+
+.footer__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 3rem;
+}
+
+.footer__logo {
+  -webkit-filter: brightness(180);
+          filter: brightness(180);
+}
+
+.footer__list {
+  list-style: none;
+  display: block;
+}
+
+.footer__list--social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__list--social *:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.footer__item {
+  display: block;
+}
+
+.footer__link {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.footer__link--icon {
+  font-size: 2.5rem;
+}
+
+.footer__link:hover {
+  color: #2acfcf;
+}
+
+.footer__span {
+  color: #fff;
+  font-size: 2rem;
+}
+
+/************************************ Footer starts here *****************************************/
+/*# sourceMappingURL=main.css.map */
